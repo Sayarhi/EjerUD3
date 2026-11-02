@@ -40,7 +40,7 @@ public class Ejercicio13 {
                 }
 
             } while (!validacionEntrada);
-
+            
             if (numeroPedido<0) {
                 negativos++;
             } else {
@@ -48,6 +48,7 @@ public class Ejercicio13 {
             }
         }
 
+        //Imprimimos  los resultados por pantalla
         System.out.println("\nTus número introducidos tienes:");
         System.out.println("Negativos: "+negativos);
         System.out.println("Positivos: "+positios);
