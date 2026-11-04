@@ -17,7 +17,8 @@ public class Comandos {
          * -una vez finalizado, en el otro ordenador usamos el comando de
          * git pull
          * 
-         * 
+         * Si quiero ver el estado de mi git coloco el comando
+         * git status
          * 
          */
     }

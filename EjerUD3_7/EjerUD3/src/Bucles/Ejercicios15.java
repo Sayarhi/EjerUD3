@@ -15,10 +15,40 @@ public class Ejercicios15 {
         Scanner datos = new Scanner(System.in);
 
         //declaro las variables
-        int base;
+        double base;
+        double exponente;
+        int exponenteEntero=0;
+        double potencia =1;
+        boolean validacionEntrada=false;
 
-        /**
-         * REUTILIZARÉ EL CODIGO DEL EJERCICIO 14 PARA ESTE 
-         */
+        //Bucle de la validación de datos
+        do {
+            System.out.println("\nIntroduce una base: ");
+            base= datos.nextDouble();
+            if (base <=0) {
+                System.out.println("No puedes meter una base negativa. Tiene que ser mayor que cero");
+            }else{
+                validacionEntrada=true;
+            }
+        } while (!validacionEntrada);
+        
+        //validación de entrada para el exponente
+        do {
+            validacionEntrada=false;
+            System.out.println("\nIntroduce el exponente");
+            exponente=datos.nextInt();
+
+            if (exponente<=0) {
+                System.out.println("Tiene que ser mayor a 0, no puede ser negativo");
+            } else if(exponente%1 !=0){
+                System.out.println("No puede ser un número decimal");
+            }else{
+                validacionEntrada=true;
+                exponenteEntero=(int)exponente;
+            }
+        } while (!validacionEntrada);
+
+        System.out.println("La base es: "+base);
+        System.out.println("El exponente es: "+exponente);
     }
 }
