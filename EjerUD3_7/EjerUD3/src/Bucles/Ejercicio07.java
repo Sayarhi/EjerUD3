@@ -16,7 +16,7 @@ public class Ejercicio07 {
         Scanner datos=new Scanner(System.in);
 
         //Variables
-        int combinacionCorrecta= 9587;
+        final int COMBINACIOCORRECTA= 9587;
         int combinacionPedida;
 
         //Petición de datos
@@ -26,7 +26,7 @@ public class Ejercicio07 {
             System.out.printf("\nDime una combinación de 4 números: ");
             combinacionPedida=datos.nextInt();
 
-            if (combinacionPedida == combinacionCorrecta) {
+            if (combinacionPedida == COMBINACIOCORRECTA) {
                 System.out.println("Felicidades. La caja fuerte está abierta");
                 break; //Esto para el programa si es que acierta el cdg
             } else {
