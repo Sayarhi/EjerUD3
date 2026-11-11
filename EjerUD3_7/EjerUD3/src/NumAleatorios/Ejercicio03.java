@@ -40,7 +40,6 @@ public class Ejercicio03 {
                 System.out.println(nombreCarta + " de Bastos");
             default:
                 break;
-        }
-        
+        }    
     }
 }
