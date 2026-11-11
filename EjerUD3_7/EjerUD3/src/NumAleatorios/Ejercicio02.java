@@ -10,6 +10,44 @@ package NumAleatorios;
  */
 public class Ejercicio02 {
     public static void main(String[] args) {
+        System.out.println("\n--- BARAJA FRANCESA ---\n");
+
+        //variables
+        int carta=(int)(Math.random()*4)+1;//Para el palo
+        int baraja=(int)(Math.random()*13)+1;//Para la carta
         
+        String nombreCarta =""; //Creamos una variable de tipo String para guardar el nombre de la carta
+        
+        if(baraja == 11){
+            nombreCarta="J";
+        } else if(baraja == 12){
+            nombreCarta="Q";
+        }else if(baraja == 13){
+            nombreCarta="K";
+        }else if(baraja == 1){
+            nombreCarta="AS";
+        }else{
+            //Sirve para covertir el número entero a formato texto
+           nombreCarta = String.valueOf(baraja);
+        }
+                
+
+        switch (carta) {
+            case 1:
+                System.out.println(nombreCarta + " de tréboles\n");
+                break;
+            case 2:
+                 System.out.println(nombreCarta + " de diamantes\n");
+                break;
+            case 3:
+                 System.out.println(nombreCarta + " de corazones\n");
+                break;
+            case 4:
+                 System.out.println(nombreCarta + " de picas\n");
+                break;
+            default:
+                break;
+        }
+    
     }
 }
